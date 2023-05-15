@@ -1,0 +1,58 @@
+#canvas1 {
+  background-color: burlywood;
+  border: 5px solid black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600 px;
+  height: 600 px;
+}
+
+#stage {
+  font-size: 144px;
+  text-align: center;
+  font-family: Arial;
+}
+
+#water {
+  font-size: 100px;
+}
+
+#cut {
+  font-size: 100px;
+}
+
+ #altWater1 {
+  height: 6.5vh;
+  width: 5.1vw;
+  position: absolute;
+  top: 70.1vh;
+  left: 37.6vw;
+  background-color: cornflowerblue;
+ 
+}
+#altWater2 {
+  height: 6.2vh;
+  width: 5.1vw;
+  position: absolute;
+  top: 63.9vh;
+  left: 37.6vw;
+  background-color: cornflowerblue;
+ 
+}
+#altWater3 {
+  height: 5.6vh;
+  width: 5.1vw;
+  position: absolute;
+  top: 58.3vh;
+  left: 37.6vw;
+  background-color: cornflowerblue; */
+  
+}
+.opacity0 {
+  opacity: 0;;
+}
+.opacity1 {
+  opacity: 1;
+}
