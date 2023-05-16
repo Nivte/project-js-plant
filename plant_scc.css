@@ -1,53 +1,60 @@
 #canvas1 {
   background-color: burlywood;
-  border: 5px solid black;
+  border: 0.5vh solid black;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 60vh;
+  left: 50vw;
   transform: translate(-50%, -50%);
-  width: 600 px;
-  height: 600 px;
+  width: 30vw;
+  height: 40vh;
 }
 
 #stage {
-  font-size: 144px;
+  font-size: 10vh;
   text-align: center;
   font-family: Arial;
 }
 
 #water {
-  font-size: 100px;
+  font-size: 7vh;
 }
 
 #cut {
-  font-size: 100px;
+  font-size: 7vh;
+    
 }
 
+#theLink {
+  color: black;
+  text-decoration: none;
+}
+
+
  #altWater1 {
-  height: 6.5vh;
-  width: 5.1vw;
+  height: 7vh;
+  width: 4.8vw;
   position: absolute;
-  top: 70.1vh;
-  left: 37.6vw;
+  top: 72vh;
+  left: 38.2vw;
   background-color: cornflowerblue;
  
 }
 #altWater2 {
-  height: 6.2vh;
-  width: 5.1vw;
+  height: 6.5vh;
+  width: 4.8vw;
   position: absolute;
-  top: 63.9vh;
-  left: 37.6vw;
+  top: 66vh;
+  left: 38.2vw;
   background-color: cornflowerblue;
  
 }
 #altWater3 {
-  height: 5.6vh;
-  width: 5.1vw;
+  height: 7vh;
+  width: 4.8vw;
   position: absolute;
-  top: 58.3vh;
-  left: 37.6vw;
-  background-color: cornflowerblue; */
+  top: 59.5vh;
+  left: 38.2vw;
+  background-color: cornflowerblue; 
   
 }
 .opacity0 {

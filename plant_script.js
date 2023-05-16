@@ -38,7 +38,7 @@ function animate() {
     frameW,
     frameH
   );
-  ctx.strokeRect(dx / 3, CANVAS_HEIGHT - 210, 100, 200);
+  ctx.strokeRect(dx / 3, CANVAS_HEIGHT - 310, 100, 300);
   ctx.lineWidth = 5;
   
   
