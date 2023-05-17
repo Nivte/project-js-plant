@@ -1,3 +1,15 @@
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: Arial;
+  text-align: center;
+  margin-top: 10vh;
+  font-size: 5vh;
+}
+
 #canvas1 {
   background-color: burlywood;
   border: 0.5vh solid black;
@@ -10,18 +22,24 @@
 }
 
 #stage {
-  font-size: 10vh;
+  font-size: 3.5vh;
   text-align: center;
   font-family: Arial;
+  margin-top: 5vh;
 }
 
 #water {
   font-size: 7vh;
+  position: absolute;
+  top: 28vh;
+  left: 36vw;
 }
 
 #cut {
   font-size: 7vh;
-    
+  position: absolute;
+  top: 28vh;
+  left: 58vw;
 }
 
 #theLink {
