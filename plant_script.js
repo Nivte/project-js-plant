@@ -3,6 +3,8 @@ let ctx = canvas.getContext("2d");
 let CANVAS_WIDTH = (canvas.width = 600);
 let CANVAS_HEIGHT = (canvas.height = 600);
 
+screen.orientation.lock("landscape");
+
 let plantImage = new Image();
 plantImage.src = "plant.jpeg";
 
@@ -40,10 +42,7 @@ function animate() {
   );
   ctx.strokeRect(dx / 3, CANVAS_HEIGHT - 310, 100, 300);
   ctx.lineWidth = 5;
-  
-  
 
-  
   let $altWater1 = document.getElementById("altWater1");
   let $altWater2 = document.getElementById("altWater2");
   let $altWater3 = document.getElementById("altWater3");
@@ -71,10 +70,6 @@ function animate() {
 }
 
 animate();
-
-
-
-
 
 /*
 תכנית- כל לחיצה מורידה מגובה המים:

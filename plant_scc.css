@@ -1,6 +1,6 @@
-
 body {
   margin: 0;
+  
 }
 
 h1 {
@@ -8,6 +8,7 @@ h1 {
   text-align: center;
   margin-top: 10vh;
   font-size: 5vh;
+ 
 }
 
 #canvas1 {
@@ -47,15 +48,13 @@ h1 {
   text-decoration: none;
 }
 
-
- #altWater1 {
+#altWater1 {
   height: 7vh;
   width: 4.8vw;
   position: absolute;
   top: 72vh;
   left: 38.2vw;
   background-color: cornflowerblue;
- 
 }
 #altWater2 {
   height: 6.5vh;
@@ -64,7 +63,6 @@ h1 {
   top: 66vh;
   left: 38.2vw;
   background-color: cornflowerblue;
- 
 }
 #altWater3 {
   height: 7vh;
@@ -72,11 +70,10 @@ h1 {
   position: absolute;
   top: 59.5vh;
   left: 38.2vw;
-  background-color: cornflowerblue; 
-  
+  background-color: cornflowerblue;
 }
 .opacity0 {
-  opacity: 0;;
+  opacity: 0;
 }
 .opacity1 {
   opacity: 1;
