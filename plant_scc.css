@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  
 }
 
 h1 {
@@ -8,7 +7,6 @@ h1 {
   text-align: center;
   margin-top: 10vh;
   font-size: 5vh;
- 
 }
 
 #canvas1 {
@@ -48,15 +46,15 @@ h1 {
   text-decoration: none;
 }
 
-#altWater1 {
+/* #altWater1 {
   height: 7vh;
   width: 4.8vw;
   position: absolute;
   top: 72vh;
   left: 38.2vw;
   background-color: cornflowerblue;
-}
-#altWater2 {
+} */
+/* #altWater2 {
   height: 6.5vh;
   width: 4.8vw;
   position: absolute;
@@ -71,10 +69,31 @@ h1 {
   top: 59.5vh;
   left: 38.2vw;
   background-color: cornflowerblue;
+} */
+
+.waterPoll {
+  background-color: blue;
+  height: 20vh;
+  width: 4.8vw;
+  position: absolute;
+  top: 59.3vh;
+  left: 38.2vw;
 }
-.opacity0 {
-  opacity: 0;
+
+.sizeStage2 {
+  height: 13vh;
+  top: 66.2vh;
 }
-.opacity1 {
-  opacity: 1;
+.sizeStage3 {
+  height: 7vh;
+  top: 72.2vh;
+}
+
+.sizeStage4 {
+  height: 0;
+}
+
+.sizeStage1 {
+  height: 20vh;
+  top: 59.4vh;
 }

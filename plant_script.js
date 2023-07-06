@@ -9,15 +9,44 @@ let plantImage = new Image();
 plantImage.src = "plant.jpeg";
 
 let $water = document.getElementById("water");
+
 $water.addEventListener("click", function () {
   if (frame < 3) frame++;
   document.getElementById("stage").innerHTML = "Stage " + (frame + 1);
 });
 
+let vase = 0;
+let $waterPoll = document.getElementById("waterPoll");
+
+$water.addEventListener("click", waterLine);
+
+function waterLine() {
+  vase++;
+  if (vase === 1) {
+    $waterPoll.classList.add("sizeStage2");
+  }
+  if (vase === 2) {
+    $waterPoll.classList.add("sizeStage3");
+  }
+  if (vase === 3) {
+    $waterPoll.classList.add("sizeStage4");
+  }
+
+}
+
 let $cut = document.getElementById("cut");
 $cut.addEventListener("click", function () {
   frame = 0;
   document.getElementById("stage").innerHTML = "Stage 1";
+
+  if (vase >= 3) {
+    $waterPoll.classList.remove("sizeStage4");
+    $waterPoll.classList.remove("sizeStage3");
+    $waterPoll.classList.remove("sizeStage2");
+    // $waterPoll.style.height = "20vh";
+    // $waterPoll.style.top = "59.4vh";
+    vase = 0;
+  } 
 });
 
 let frame = 0;
@@ -43,69 +72,16 @@ function animate() {
   ctx.strokeRect(dx / 3, CANVAS_HEIGHT - 310, 100, 300);
   ctx.lineWidth = 5;
 
-  let $altWater1 = document.getElementById("altWater1");
-  let $altWater2 = document.getElementById("altWater2");
-  let $altWater3 = document.getElementById("altWater3");
+  // let $altWater1 = document.getElementById("altWater1");
+  // let $altWater2 = document.getElementById("altWater2");
+  // let $altWater3 = document.getElementById("altWater3");
 
-  function waterLine() {
-    ctx.fillRect(dx / 3, CANVAS_HEIGHT - 82, 98, 70, 60);
-    ctx.fillStyle = "blue";
-  }
+  // function waterLine() {
+  //   ctx.fillRect(dx / 3, CANVAS_HEIGHT - 82, 98, 70, 60);
+  //   ctx.fillStyle = "blue";
+  // }
 
-  $water.addEventListener("click", waterLine);
-  let vase = 0;
-  function waterLine() {
-    vase++;
-    if (vase === 1) {
-      $altWater3.classList.add("opacity0");
-    }
-    if (vase === 2) {
-      $altWater2.classList.add("opacity0");
-    }
-    if (vase === 3) {
-      $altWater1.classList.add("opacity0");
-    }
-  }
   requestAnimationFrame(animate);
 }
 
 animate();
-
-/*
-תכנית- כל לחיצה מורידה מגובה המים:
-
-הולך לכפתור הקיים של לחיצה על וואטר. בכל לחיצה- תוריד 25% מהייט של המים. , כל עוד גובה מים שווה או גדול מ-25% מגובה המים. 
-
-
-
-
-*/
-
-// let $myCanvas = document.getElementById("myCanvas");
-// let $myButton = document.getElementById("myButton");
-// let $water1 = document.getElementById("water1");
-// let $water2 = document.getElementById("water2");
-// let $water3 = document.getElementById("water3");
-
-// let stage = 0;
-
-// $myButton.addEventListener("click", edit);
-
-// function edit() {
-//   stage++;
-//   if (stage > 0 && stage < 3) {
-//     $water1.style.backgroundColor = "blue";
-//   }
-//   if (stage > 1 && stage < 3) {
-//     $water2.style.backgroundColor = "blue";
-//   }
-//   if (stage > 2 && stage < 4) {
-//     $water3.style.backgroundColor = "blue";
-//   }
-//   if (stage > 3) {
-//     $water1.style.backgroundColor = "white";
-//     $water2.style.backgroundColor = "white";
-//     $water3.style.backgroundColor = "white";
-//     stage = 0;
-//   }
-// }
