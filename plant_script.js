@@ -39,14 +39,14 @@ $cut.addEventListener("click", function () {
   frame = 0;
   document.getElementById("stage").innerHTML = "Stage 1";
 
-  if (vase >= 3) {
+  
     $waterPoll.classList.remove("sizeStage4");
     $waterPoll.classList.remove("sizeStage3");
     $waterPoll.classList.remove("sizeStage2");
     // $waterPoll.style.height = "20vh";
     // $waterPoll.style.top = "59.4vh";
     vase = 0;
-  } 
+  
 });
 
 let frame = 0;
