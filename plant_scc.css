@@ -72,7 +72,7 @@ h1 {
 } */
 
 .waterPoll {
-  background-color: #7CB9E8;
+  background-color: #7cb9e8;
   height: 20vh;
   width: 4.8vw;
   position: absolute;
@@ -96,4 +96,58 @@ h1 {
 .sizeStage1 {
   height: 20vh;
   top: 59.4vh;
+}
+
+@media screen and (min-width: 0px) and (max-width: 700px) {
+  #canvas1 {
+    background-color: burlywood;
+    border: 0.5vh solid black;
+    position: absolute;
+    top: 64vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+    height: 40vh;
+  }
+
+  #water {
+    font-size: 5vh;
+    position: absolute;
+    top: 28vh;
+    left: 18vw;
+  }
+
+  #cut {
+    font-size: 5vh;
+    position: absolute;
+    top: 28vh;
+    left: 60vw;
+  }
+
+  .waterPoll {
+    background-color: #7cb9e8;
+    height: 20vh;
+    width: 9vw;
+    position: absolute;
+    top: 63.3vh;
+    left: 26.5vw;
+  }
+
+  .sizeStage2 {
+    height: 13vh;
+    top: 70.2vh;
+  }
+  .sizeStage3 {
+    height: 7vh;
+    top: 76.2vh;
+  }
+
+  .sizeStage4 {
+    height: 0;
+  }
+
+  .sizeStage1 {
+    height: 20vh;
+    top: 59.4vh;
+  }
 }
