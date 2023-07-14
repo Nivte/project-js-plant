@@ -44,6 +44,8 @@ h1 {
   left: 58vw;
 }
 
+
+
 @media screen and (min-width: 0px) and (max-width: 700px) {
   #canvas1 {
     background-color: burlywood;
