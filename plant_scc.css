@@ -1,5 +1,6 @@
 body {
   margin: 0;
+
 }
 
 h1 {
@@ -7,6 +8,7 @@ h1 {
   text-align: center;
   margin-top: 10vh;
   font-size: 5vh;
+
 }
 
 #canvas1 {
@@ -25,77 +27,21 @@ h1 {
   text-align: center;
   font-family: Arial;
   margin-top: 5vh;
+
 }
 
-#water {
+#waterBtn {
   font-size: 7vh;
   position: absolute;
   top: 28vh;
   left: 36vw;
 }
 
-#cut {
+#cutBtn {
   font-size: 7vh;
   position: absolute;
   top: 28vh;
   left: 58vw;
-}
-
-#theLink {
-  color: black;
-  text-decoration: none;
-}
-
-/* #altWater1 {
-  height: 7vh;
-  width: 4.8vw;
-  position: absolute;
-  top: 72vh;
-  left: 38.2vw;
-  background-color: cornflowerblue;
-} */
-/* #altWater2 {
-  height: 6.5vh;
-  width: 4.8vw;
-  position: absolute;
-  top: 66vh;
-  left: 38.2vw;
-  background-color: cornflowerblue;
-}
-#altWater3 {
-  height: 7vh;
-  width: 4.8vw;
-  position: absolute;
-  top: 59.5vh;
-  left: 38.2vw;
-  background-color: cornflowerblue;
-} */
-
-.waterPoll {
-  background-color: #7cb9e8;
-  height: 20vh;
-  width: 4.8vw;
-  position: absolute;
-  top: 59.3vh;
-  left: 38.2vw;
-}
-
-.sizeStage2 {
-  height: 13vh;
-  top: 66.2vh;
-}
-.sizeStage3 {
-  height: 7vh;
-  top: 72.2vh;
-}
-
-.sizeStage4 {
-  height: 0;
-}
-
-.sizeStage1 {
-  height: 20vh;
-  top: 59.4vh;
 }
 
 @media screen and (min-width: 0px) and (max-width: 700px) {
@@ -110,44 +56,17 @@ h1 {
     height: 40vh;
   }
 
-  #water {
+  #waterBtn {
     font-size: 5vh;
     position: absolute;
     top: 28vh;
     left: 18vw;
   }
 
-  #cut {
+  #cutBtn {
     font-size: 5vh;
     position: absolute;
     top: 28vh;
     left: 60vw;
-  }
-
-  .waterPoll {
-    background-color: #7cb9e8;
-    height: 20vh;
-    width: 9.5vw;
-    position: absolute;
-    top: 63.3vh;
-    left: 26.5vw;
-  }
-
-  .sizeStage2 {
-    height: 13vh;
-    top: 70.2vh;
-  }
-  .sizeStage3 {
-    height: 7vh;
-    top: 76.2vh;
-  }
-
-  .sizeStage4 {
-    height: 0;
-  }
-
-  .sizeStage1 {
-    height: 20vh;
-    top: 59.4vh;
   }
 }

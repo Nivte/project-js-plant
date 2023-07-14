@@ -2,51 +2,57 @@ let canvas = document.getElementById("canvas1");
 let ctx = canvas.getContext("2d");
 let CANVAS_WIDTH = (canvas.width = 600);
 let CANVAS_HEIGHT = (canvas.height = 600);
+let stage = document.getElementById("stage");
+let waterHeight = 300;
+let waterTop = 290;
 
-screen.orientation.lock("landscape");
+let frame = 0;
 
 let plantImage = new Image();
 plantImage.src = "plant.jpeg";
 
-let $water = document.getElementById("water");
+let $waterBtn = document.getElementById("waterBtn");
 
-$water.addEventListener("click", function () {
+$waterBtn.addEventListener("click", function () {
   if (frame < 3) frame++;
-  document.getElementById("stage").innerHTML = "Stage " + (frame + 1);
+  stage.innerHTML = "Stage " + (frame + 1);
 });
 
-let vase = 0;
-let $waterPoll = document.getElementById("waterPoll");
+$waterBtn.addEventListener("click", waterLine);
 
-$water.addEventListener("click", waterLine);
+let p = 1;
 
 function waterLine() {
-  vase++;
-  if (vase === 1) {
-    $waterPoll.classList.add("sizeStage2");
+  if (p === 1) {
+    waterHeight = 200;
+    waterTop = 390;
   }
-  if (vase === 2) {
-    $waterPoll.classList.add("sizeStage3");
+
+  if (p === 2) {
+    waterHeight = 100;
+    waterTop = 490;
   }
-  if (vase === 3) {
-    $waterPoll.classList.add("sizeStage4");
+
+  if (p === 3) {
+    waterHeight = 0;
+    waterTop = 0;
   }
+  p++;
 }
 
-let $cut = document.getElementById("cut");
-$cut.addEventListener("click", function () {
-  frame = 0;
-  document.getElementById("stage").innerHTML = "Stage 1";
+let $cutBtn = document.getElementById("cutBtn");
+$cutBtn.addEventListener("click", function () {
+  stage.innerHTML = "Stage 1";
 
-  $waterPoll.classList.remove("sizeStage4");
-  $waterPoll.classList.remove("sizeStage3");
-  $waterPoll.classList.remove("sizeStage2");
-  // $waterPoll.style.height = "20vh";
-  // $waterPoll.style.top = "59.4vh";
-  vase = 0;
+  frame = 0;
+
+  if (p > 1) {
+    waterHeight = 300;
+    waterTop = 290;
+    p = 1;
+  }
 });
 
-let frame = 0;
 let frameW = 227;
 let frameH = 466;
 let dx = (CANVAS_WIDTH - frameW) / 2;
@@ -69,14 +75,8 @@ function animate() {
   ctx.strokeRect(dx / 3, CANVAS_HEIGHT - 310, 100, 300);
   ctx.lineWidth = 5;
 
-  // let $altWater1 = document.getElementById("altWater1");
-  // let $altWater2 = document.getElementById("altWater2");
-  // let $altWater3 = document.getElementById("altWater3");
-
-  // function waterLine() {
-  //   ctx.fillRect(dx / 3, CANVAS_HEIGHT - 82, 98, 70, 60);
-  //   ctx.fillStyle = "blue";
-  // }
+  ctx.fillRect(65, waterTop, 94, waterHeight);
+  ctx.fillStyle = "#7cb9e8";
 
   requestAnimationFrame(animate);
 }
