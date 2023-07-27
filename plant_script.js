@@ -74,18 +74,18 @@ function animateWater() {
   if (frame === 1 && waterHeight > 200) {
     // waterHeight = 200;
     // waterTop = 390;
-    waterHeight -= 1.5;
-    waterTop += 1.5;
+    waterHeight -= 2;
+    waterTop += 2;
   }
 
   if (frame === 2 && waterHeight > 100) {
-    waterHeight -= 1.5;
-    waterTop += 1.5;
+    waterHeight -= 2;
+    waterTop += 2;
   }
 
   if (frame === 3 && waterHeight > 0) {
-    waterHeight -= 1.5;
-    waterTop += 1.5;
+    waterHeight -= 2;
+    waterTop += 2;
   }
 
   requestAnimationFrame(animateWater);
