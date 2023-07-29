@@ -86,8 +86,22 @@ left: 30vw;
       }
 
 
+      #stageTitle {
+        font-size: 3.5vh;
+      position: absolute;
+      top: 15vh;
+      left: 38vw;
+        font-family: Arial;
+        margin-top: 5vh;
+      
+      }
+
+
+
+
+
   #canvas1 {
-    background-color: burlywood;
+
     border: 0.5vh solid black;
     position: absolute;
     top: 64vh;
