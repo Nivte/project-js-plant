@@ -44,14 +44,14 @@ left: 47vw;
 }
 
 #waterBtn {
-  font-size: 7vh;
+  font-size: 4vh;
   position: absolute;
   top: 28vh;
   left: 36vw;
 }
 
 #cutBtn {
-  font-size: 7vh;
+  font-size: 4vh;
   position: absolute;
   top: 28vh;
   left: 58vw;
@@ -59,7 +59,33 @@ left: 47vw;
 
 
 
+@media screen and (min-width:900px) and (max-width: 1300px)  {
+  h1 {
+left: 35vw;
+  }
+}
+
+
+@media screen and (min-width:700px) and (max-width: 900px)  {
+  h1 {
+left: 30vw;
+  }
+}
+
+
+
+
+
 @media screen and (min-width: 0px) and (max-width: 700px) {
+
+
+  h1 {
+    font-size: 3.5vh;
+    top: -3vh;
+    left: 22vw;
+      }
+
+
   #canvas1 {
     background-color: burlywood;
     border: 0.5vh solid black;
